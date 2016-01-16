@@ -1,11 +1,5 @@
-Image `stuartfenton/base`
+Image `grandmore/node-build`
 
-Basic image with `curl, wget, git-core, vim, htop and supervisor.`
+Basic image with `make gcc g++ python krb5-dev`
 
-The default CMD /start/supervisord sets the local timezone based on the TZ environment variable and runs supervisord.
-
-Additional services may be added to /etc/supervisor/conf.d/.
-
-Based on image from `hwuethrich/base`
-
-I needed to make custom changes to bamboo and found it easier to start from the ground up. Specifically I needed a later version of ubunto as I need > Python 2.7. and custom builds of mercurial.
+An alpine-node:4.2 image with build tools added.
