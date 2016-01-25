@@ -1,5 +1,16 @@
+An alpine-node:4.2 image with build tools added.
+
+ 
+
 Image `grandmore/node-build`
 
-Basic image with `make gcc g++ python krb5-dev`
+Basic image with `make gcc g++ python krb5-dev git`
 
-An alpine-node:4.2 image with build tools added.
+ 
+
+\# Build Base image - node with buid tools
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+docker build -t grandmore/node-build .
+docker push grandmore/node-build
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
